@@ -9,10 +9,9 @@ $(document).ready(function() {
 
   // compares player and computer choice; returns winner
   function winner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice)
+    if (playerChoice === computerChoice) {
       return "Draw";
-    
-    if (playerChoice === "Paper") {
+    } else if (playerChoice === "Paper") {
       if (computerChoice === "Rock") {
         return "You win";
       } else if (computerChoice === "Scissors") {
@@ -37,7 +36,7 @@ $(document).ready(function() {
   $(".btn-primary").click(function() {
     var playerChoice = $(this).attr("id");
 
-    // API call to heroku app
+    // API call to Heroku
     $.get("http://rock-paper-scissors-api.herokuapp.com/", function(data) {
       var computerChoice = data;
 
@@ -45,6 +44,7 @@ $(document).ready(function() {
       $("#pieces-played").html("You played " + playerChoice + ", I played " + computerChoice);
 
       // states winner
+      console.log(playerChoice, computerChoice);
       $("#game-results").html(winner(playerChoice, computerChoice));
     });
 
