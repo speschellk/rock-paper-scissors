@@ -2,24 +2,25 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" type="style/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="rps-game.js"></script>
   </head>
   <body>
+    <h2>Rock, Paper, Scissors</h2>
     <div class='container'>
-      <h2>Rock, Paper, Scissors Game</h2>
-      <h4>Which do you choose?</h4>
-      <button class="btn btn-primary" id="rock">Rock</button>
-      <button class="btn btn-primary" id="paper">Paper</button>
-      <button class="btn btn-primary" id="scissors">Scissors</button>
+      <h4>Which do you choose, player?</h4>
+      <button class="btn btn-primary" id="rock"><img src="/rock-paper-scissors/img/rock.png"/></button>
+      <button class="btn btn-primary" id="paper"><img src="/rock-paper-scissors/img/paper.png"/></button>
+      <button class="btn btn-primary" id="scissors"><img src="/rock-paper-scissors/img/scissors.png"/></button>
       <!--shows 'You played __, I played __' after button is pushed -->
       <div id="pieces-played"></div>
       <!--shows either 'You win', 'You lose', or 'Draw' after button is pushed -->
       <div id="game-results"></div>
       <br>
       <!--appears after game is over and disappears for new game -->
-      <button class="btn btn-default" id="new-game" style="display:none">Play New Game</button>
+      <button class="btn btn-default" id="new-game" style="display:none">Play Again</button>
     </div>
   </body>
 </html>
