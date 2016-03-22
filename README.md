@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Game of rock paper scissors against computer - AJAX, JS, jQuery
+Game of rock paper scissors against computer - uses AJAX, JS, jQuery
