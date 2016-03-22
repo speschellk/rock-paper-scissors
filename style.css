@@ -21,20 +21,20 @@ h2 {
 	margin-left: auto;
 	top: 30px;
 	text-align: center;
-	padding: 4px;
+	padding-top: 4px;
 	border-radius: 3px;
 }
 
 /* rock, paper, scissors buttons */
 .btn-primary img {
-	height: 200px;
-	width: 200px;
+	height: 180px;
+	width: 180px;
 	border-radius: 3px;
 }
 
 /* play again button */
 .btn-default {
-	height: 50px;
+	height: 30px;
 	width: 100px;
 	font-family: "Rock Salt", serif;
 	font-size: 10px;
