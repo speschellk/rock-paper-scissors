@@ -1,0 +1,44 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: "Rock Salt", serif;
+	background-color: #ffad33;
+}
+
+/* page header */
+h2 {
+	text-align: center
+}
+
+/* game container */
+.container {
+	position: relative;
+	height: 450px;
+	width: 900px;
+	background-color: #ffffff;
+	display: block;	
+	margin-right: auto;
+	margin-left: auto;
+	top: 30px;
+	text-align: center;
+	padding: 4px;
+	border-radius: 3px;
+}
+
+/* rock, paper, scissors buttons */
+.btn-primary img {
+	height: 200px;
+	width: 200px;
+	border-radius: 3px;
+}
+
+/* play again button */
+.btn-default {
+	height: 50px;
+	width: 100px;
+	font-family: "Rock Salt", serif;
+	font-size: 10px;
+	background-color: #e63900;
+	border: none;
+	border-radius: 3px;
+}
